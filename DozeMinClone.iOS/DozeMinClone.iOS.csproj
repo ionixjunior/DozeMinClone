@@ -113,6 +113,13 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\settings.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\settings.imageset\settings.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\play.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\play.imageset\play.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\magnifier.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\magnifier.imageset\magnifier.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -132,5 +139,10 @@
       <Project>{B0B6D19E-F6C7-47C2-8347-021E7EBD3652}</Project>
       <Name>DozeMinClone</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images.xcassets\settings.imageset\" />
+    <Folder Include="Resources\Images.xcassets\play.imageset\" />
+    <Folder Include="Resources\Images.xcassets\magnifier.imageset\" />
   </ItemGroup>
 </Project>

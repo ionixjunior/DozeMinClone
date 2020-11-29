@@ -3,19 +3,23 @@
     x:Class="DozeMinClone.ContentViews.Discover.Highlight"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
-    rainbows:DebugRainbow.ShowColors="false">
+    rainbows:DebugRainbow.ShowColors="false"
+    mc:Ignorable="d">
     <ContentView.Content>
         <Grid
             ColumnDefinitions="*,80"
             ColumnSpacing="0"
-            RowDefinitions="280">
+            RowDefinitions="300">
             <Image
+                x:Name="CoverImage"
                 Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Aspect="AspectFill"
-                Source="highlight.jpg" />
+                d:Source="highlight.jpg"
+                Aspect="AspectFill" />
 
             <Image
                 Grid.Row="0"
@@ -41,20 +45,23 @@
                 </Frame>
 
                 <Label
+                    x:Name="AuthorLabel"
+                    d:Text="Mark Manson"
                     FontSize="Small"
-                    Text="Mark Manson"
                     TextColor="Gray" />
 
                 <Label
+                    x:Name="TitleLabel"
+                    d:Text="A Sutil Arte de Ligar o F*da-se"
                     FontSize="40"
-                    Text="A Sutil Arte de Ligar o F*da-se"
                     TextColor="White" />
 
                 <Label
+                    x:Name="DescriptionLabel"
+                    d:Text="Escutamos por décadas que pensar positivo é a chave para sermos felizes e enriquecer. Mark Manson parece discordar. Em ‘The Subtle Art of Not Giving a Fuck’, que foi traduzido como “A Sutil Arte de Ligar o Foda-se”, ele nos mostra que, para melhorar nossas vidas, devemos aprender a aceitar que somos limitados e falhamos o tempo todo."
                     FontSize="Small"
                     LineBreakMode="TailTruncation"
                     MaxLines="3"
-                    Text="Escutamos por décadas que pensar positivo é a chave para sermos felizes e enriquecer. Mark Manson parece discordar. Em ‘The Subtle Art of Not Giving a Fuck’, que foi traduzido como “A Sutil Arte de Ligar o Foda-se”, ele nos mostra que, para melhorar nossas vidas, devemos aprender a aceitar que somos limitados e falhamos o tempo todo."
                     TextColor="White" />
             </StackLayout>
 

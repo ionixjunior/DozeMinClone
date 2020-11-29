@@ -9,8 +9,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="20">
-                <contentViews:Header />
-                <contentViews:Highlight />
+                <contentViews:Header x:Name="Header" />
+                <contentViews:Highlight x:Name="Highlight" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

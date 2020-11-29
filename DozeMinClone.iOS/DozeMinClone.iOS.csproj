@@ -150,5 +150,6 @@
   <ItemGroup>
     <BundleResource Include="Resources\highlight.jpg" />
     <BundleResource Include="Resources\dark_gradient.png" />
+    <BundleResource Include="Resources\charles_petzold.jpg" />
   </ItemGroup>
 </Project>

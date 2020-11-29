@@ -147,4 +147,8 @@
     <Folder Include="Resources\Images.xcassets\magnifier.imageset\" />
     <Folder Include="Effects\" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\highlight.jpg" />
+    <BundleResource Include="Resources\dark_gradient.png" />
+  </ItemGroup>
 </Project>

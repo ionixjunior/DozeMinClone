@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="DozeMinClone.ContentViews.Discover.Header"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:effects="clr-namespace:DozeMinClone.Effects"
+    xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+    rainbows:DebugRainbow.ShowColors="false">
+    <ContentView.Content>
+        <Grid ColumnDefinitions="*" RowDefinitions="50,50">
+            <FlexLayout
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="15,0"
+                AlignItems="Center"
+                JustifyContent="SpaceBetween">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Title"
+                    Text="Discover" />
+
+                <ImageButton
+                    Padding="10"
+                    BackgroundColor="{StaticResource BackgroundColor}"
+                    CornerRadius="20"
+                    HeightRequest="40"
+                    Source="settings"
+                    WidthRequest="40" />
+            </FlexLayout>
+
+            <Frame
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="15,0"
+                Padding="0"
+                BackgroundColor="{StaticResource BackgroundColor}"
+                CornerRadius="6"
+                HasShadow="false">
+                <FlexLayout AlignItems="Center">
+                    <Image
+                        Margin="15,0"
+                        HeightRequest="20"
+                        Source="magnifier"
+                        WidthRequest="20" />
+                    <Entry
+                        BackgroundColor="Transparent"
+                        Placeholder="Search for authors, microbooks..."
+                        PlaceholderColor="{StaticResource PrimaryColor}">
+                        <Entry.Effects>
+                            <effects:BorderlessEffect />
+                        </Entry.Effects>
+                    </Entry>
+                </FlexLayout>
+            </Frame>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

@@ -68,6 +68,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Effects\BorderlessEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -144,5 +145,6 @@
     <Folder Include="Resources\Images.xcassets\settings.imageset\" />
     <Folder Include="Resources\Images.xcassets\play.imageset\" />
     <Folder Include="Resources\Images.xcassets\magnifier.imageset\" />
+    <Folder Include="Effects\" />
   </ItemGroup>
 </Project>

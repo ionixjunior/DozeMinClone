@@ -7,11 +7,13 @@
     xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
     rainbows:DebugRainbow.ShowColors="false">
     <ContentView.Content>
-        <Grid ColumnDefinitions="*" RowDefinitions="50,50">
+        <Grid
+            Margin="16,0"
+            ColumnDefinitions="*"
+            RowDefinitions="50,50">
             <FlexLayout
                 Grid.Row="0"
                 Grid.Column="0"
-                Margin="15,0"
                 AlignItems="Center"
                 JustifyContent="SpaceBetween">
                 <Label
@@ -31,7 +33,6 @@
             <Frame
                 Grid.Row="1"
                 Grid.Column="0"
-                Margin="15,0"
                 Padding="0"
                 BackgroundColor="{StaticResource BackgroundColor}"
                 CornerRadius="6"

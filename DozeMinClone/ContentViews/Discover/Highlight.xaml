@@ -27,7 +27,7 @@
             <StackLayout
                 Grid.Row="0"
                 Grid.Column="0"
-                Margin="14,14,7,14"
+                Margin="16,16,8,16"
                 VerticalOptions="End">
                 <Frame
                     Padding="5"
@@ -61,7 +61,7 @@
             <Image
                 Grid.Row="0"
                 Grid.Column="1"
-                Margin="7,14,14,14"
+                Margin="8,16,16,16"
                 Source="play"
                 VerticalOptions="End" />
         </Grid>
